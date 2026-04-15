@@ -332,7 +332,7 @@
             let adCount = parseInt(localStorage.getItem(`adCount_${fileId}`) || 0);
             try {
                 buttonTextEl.textContent = getText('loading_ad');
-                await show_9745051();
+                await show_9858364();
                 adCount++;
                 localStorage.setItem(`adCount_${fileId}`, adCount);
                 if (adCount >= requiredCount) {
@@ -386,11 +386,10 @@
         });
 
         filesGrid.addEventListener('click', handleDownloadClick);
-        searchInput.addEventListener('input', handleSearch); // Changed to 'input' for better responsiveness
+        searchInput.addEventListener('input', handleSearch);
         document.querySelectorAll('.lang-btn').forEach(btn => {
             btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
         });
     </script>
 </body>
 </html>
-
